@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demon Hosting - India's Fastest Hosting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(90deg, #ff0040, #4a00e0);
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #000;
+      animation: flicker 2s infinite;
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .plan {
+      background: #1a1a1a;
+      border: 1px solid #ff0040;
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 250px;
+      box-shadow: 0 0 15px #ff0040aa;
+      transition: transform 0.3s ease;
+    }
+    .plan:hover {
+      transform: scale(1.05);
+    }
+    .plan h2 {
+      color: #ff0040;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #ff0040;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #ff3366;
+    }
+    footer {
+      padding: 1rem;
+      text-align: center;
+      background: #111;
+      color: #888;
+    }
+    .qr {
+      display: none;
+      margin-top: 1rem;
+    }
+  </style>
+  <script>
+    function showQR(id) {
+      document.querySelectorAll('.qr').forEach(q => q.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>⚡ DEMON HOSTING ⚡</header>  <section>
+    <h1>India's Most Affordable Minecraft Hosting</h1>
+    <p>Lightning-fast servers, Discord support, and instant setup!</p>
+  </section>  <section class="plans">
+    <div class="plan">
+      <h2>Starter</h2><p>₹179 / month</p><p>2GB RAM</p><p>1vCPU</p>
+      <a onclick="showQR('qr-starter')" class="btn">Pay</a>
+      <img id="qr-starter" class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=avadhutrairikar@fam&pn=DemonHosting&am=179&cu=INR" width="200">
+    </div>
+    <div class="plan">
+      <h2>Basic</h2><p>₹279 / month</p><p>4GB RAM</p><p>2vCPU</p>
+      <a onclick="showQR('qr-basic')" class="btn">Pay</a>
+      <img id="qr-basic" class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=avadhutrairikar@fam&pn=DemonHosting&am=279&cu=INR" width="200">
+    </div>
+    <div class="plan">
+      <h2>Standard</h2><p>₹449 / month</p><p>6GB RAM</p><p>2vCPU</p>
+      <a onclick="showQR('qr-standard')" class="btn">Pay</a>
+      <img id="qr-standard" class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=avadhutrairikar@fam&pn=DemonHosting&am=449&cu=INR" width="200">
+    </div>
+    <div class="plan">
+      <h2>Advanced</h2><p>₹999 / month</p><p>10GB RAM</p><p>4vCPU</p>
+      <a onclick="showQR('qr-advanced')" class="btn">Pay</a>
+      <img id="qr-advanced" class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=avadhutrairikar@fam&pn=DemonHosting&am=999&cu=INR" width="200">
+    </div>
+    <div class="plan">
+      <h2>Premium</h2><p>₹1499 / month</p><p>16GB RAM</p><p>6vCPU</p>
+      <a onclick="showQR('qr-premium')" class="btn">Pay</a>
+      <img id="qr-premium" class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=avadhutrairikar@fam&pn=DemonHosting&am=1499&cu=INR" width="200">
+    </div>
+    <div class="plan">
+      <h2>Demon</h2><p>₹1999 / month</p><p>32GB RAM</p><p>8vCPU</p>
+      <a onclick="showQR('qr-demon')" class="btn">Pay</a>
+      <img id="qr-demon" class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=avadhutrairikar@fam&pn=DemonHosting&am=1999&cu=INR" width="200">
+    </div>
+  </section>  <section id="order">
+    <h2>Order Now</h2>
+    <p>Scan the QR above and complete the payment. Then join our Discord and ping us!</p>
+    <p><strong>Discord:</strong> <a class="btn" href="https://discord.gg/UYXBDvfPEM">Join Server</a></p>
+  </section>  <footer>
+    &copy; 2025 Demon Hosting | Built with ❤️ for Indian gamers.
+  </footer>
+</body>
+</html>
